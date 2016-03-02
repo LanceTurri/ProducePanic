@@ -1,0 +1,428 @@
+/* ============================================================
+  GLOBAL STYLES
+============================================================ */
+@font-face {
+    font-family: 'locust';
+    src: url('../fonts/cgf_locust_resistance-webfont.eot');
+    src: url('../fonts/cgf_locust_resistance-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cgf_locust_resistance-webfont.woff2') format('woff2'),
+         url('../fonts/cgf_locust_resistance-webfont.woff') format('woff'),
+         url('../fonts/cgf_locust_resistance-webfont.ttf') format('truetype'),
+         url('../fonts/cgf_locust_resistance-webfont.svg#cgf_locust_resistanceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'chunq';
+    src: url('../fonts/chunq-webfont.eot');
+    src: url('../fonts/chunq-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/chunq-webfont.woff2') format('woff2'),
+         url('../fonts/chunq-webfont.woff') format('woff'),
+         url('../fonts/chunq-webfont.ttf') format('truetype'),
+         url('../fonts/chunq-webfont.svg#chunqregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: url('../images/dirt/dirt-light.png');
+    color: #d2d2d2;
+    font-family: 'HelveticaNeue', 'Helvetica', 'Arial', sans-serif;
+}
+
+h2 {
+  font-family: 'locust', sans-serif;
+  line-height: 135%;
+}
+
+h3 {
+  font-family: 'locust', sans-serif;
+  font-size: 18px;
+  line-height: 135%;
+}
+
+p {
+  font-size: 16px;
+}
+
+.row img {
+  max-width: 100%;
+}
+
+.cf::before,
+.cf::after {
+    content: " ";
+    display: table;
+}
+
+.cf::after {
+    clear: both;
+}
+
+.margin-b30 {
+  margin-bottom: 30px;
+}
+
+.margin-b50 {
+  margin-bottom: 50px;
+}
+
+.justified {
+  text-align: justify;
+}
+
+/* ============================================================
+  MAIN STYLES
+============================================================ */
+
+header {
+  background: url('../images/dirt/dirt-dark.png');
+  padding-top: 80px;
+  padding-bottom: 80px;
+  min-height: 207px;
+  text-align: center;
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+// Navbar styling
+.navbar.navbar-inverse {
+  background-image: none;
+}
+
+.navbar-header .navbar-brand {
+  padding: 5px;
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.navbar .fa {
+  padding: 3px;
+  color: #fff;
+  border: 1px solid #e5e5e5;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  margin: 9px 1px;
+  opacity: 0.8;
+  text-align: center;
+  position: relative;
+  vertical-align: middle;
+  -moz-transition: opacity .25s linear;
+  -webkit-transition: opacity .25s linear;
+  transition: opacity .25s linear;
+
+  &:before {
+    top: 50%;
+    position: absolute;
+    margin-top: -9px;
+    width: 100%;
+    left: 0;
+  }
+
+  &:hover {
+    text-decoration: none;
+    opacity: 1.0;
+  }
+
+  &.fa-facebook {
+    background: #3C5B9A;
+  }
+
+  &.fa-google-plus {
+    background: #E46045;
+  }
+
+  &.fa-instagram {
+    background: #09549E;
+  }
+
+  &.fa-linkedin {
+    background: #1E6699;
+  }
+
+  &.fa-pinterest {
+    background: #CC3B27;
+  }
+
+  &.fa-twitch {
+    background: #602E8F;
+  }
+
+  &.fa-twitter {
+    background: #3EADEE;
+  }
+
+  &.fa-youtube {
+    background: #E5432D;
+  }
+}
+
+.navbar .press-link {
+  color: #d2d2d2;
+  padding-right: 15px;
+}
+
+
+// YouTube video section
+.video {
+  background: url("../images/dirt/dirt-dark.png");
+  padding-bottom: 50px;
+}
+
+// Mission briefing section
+.introduction {
+  background: url('../images/dirt/dirt-medium.png');
+  color: #f2f2f2;
+
+  .container {
+    margin: 50px auto;
+  }
+
+  .overview {
+    padding-bottom: 10px;
+  }
+}
+
+// Content seperator sections
+.content {
+  border-top: 3px solid #160F09;
+  border-bottom: 3px solid #160F09;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+
+  &.stacked {
+    padding: 35px 0;
+  }
+
+  &.single {
+    padding: 50px 0;
+  }
+
+  em {
+    font-size: 38px;
+    font-style: normal;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .fa.fa-star {
+    padding: 0px 2px;
+    color: #DC4F40;
+    font-size: 36px;
+  }
+
+  .red {
+    color: #DC4F40;
+    font-family: 'chunq', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .green {
+    color: #89B74C;
+    font-family: 'chunq', sans-serif;
+    letter-spacing: 1px;
+  }
+}
+
+// Back us and sharing images
+.back-us img,
+.share-it img {
+    width: 100%;
+}
+
+.back-us {
+  text-align: center;
+
+  .col-md-4 {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+// Social media sharing buttons
+.share-it {
+  .row {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .col-md-2 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+// Six features section
+.features {
+  margin: 60px auto 30px;
+
+  .row {
+    color: #d2d2d2;
+    text-align: center;
+
+    .col-md-4 {
+      margin-bottom: 30px;
+    }
+  }
+
+  .fa {
+    font-size: 44px;
+    display: block;
+  }
+}
+
+// Award section
+.awards {
+  margin: 50px auto;
+
+  .award {
+    height: 80px;
+    width: 250px;
+    margin: 0 auto 15px;
+    padding: 0 40px;
+    position: relative;
+    text-align: center;
+
+    &:before,
+    &:after {
+      display: inline-block;
+      content: '';
+      width: 32px;
+      height: 80px;
+      position: absolute;
+      top: 0;
+    }
+
+    &:before {
+      left: 0;
+      background: url('../images/wreath-l.png') center center no-repeat;
+      background-size: contain;
+    }
+    &:after {
+      right: 0;
+      background: url('../images/wreath-r.png') center center no-repeat;
+      background-size: contain;
+    }
+
+    .award-text {
+
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em;
+      }
+    }
+
+    h4 {
+      font-size: 16px;
+      font-family: 'chunq', sans-serif;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+  }
+}
+
+// About us section at the bottom
+.about-us {
+  background: #111;
+  padding: 30px 0;
+}
+
+// Footer styles with the email submit form
+footer {
+    background: #000;
+    padding: 15px 0;
+
+    .input-group-addon {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .input-group-btn .btn {
+      text-transform: uppercase;
+      font-size: 12px;
+      height: 34px;
+      text-shadow: none;
+    }
+}
+
+/* ============================================================
+  SLIDER OVERRIDES
+============================================================ */
+
+.slick-slider button {
+  border: none;
+  position: absolute;
+  text-indent: -9999px;
+  z-index: 1;
+
+  &:focus {
+    outline: none;
+  }
+}
+.slick-slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-prev, .slick-next {
+  top: 0;
+  width: 12%;
+  height: 100%;
+  margin-top: 0;
+  background-color: rgba(0,0,0,0.7);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+.slick-prev::before, .slick-next::before {
+  content: "";
+  position:absolute;
+  top: 45%;
+  width:60px;
+  height: 40px;
+  z-index: 2;
+}
+.slick-prev::before {
+    right:20px;
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-right: 30px solid rgba(255,255,255,0.7);
+}
+.slick-next::before {
+    left:20px;
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgba(255,255,255,0.7);
+}
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0,0,0,0.0);
+}
