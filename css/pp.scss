@@ -91,6 +91,11 @@ header {
 
 
 // Navbar styling
+
+.logged-in .navbar {
+  margin-top: 32px;
+}
+
 .navbar.navbar-inverse {
   background-image: none;
 }
@@ -350,19 +355,46 @@ header {
 // Footer styles with the email submit form
 footer {
     background: #000;
-    padding: 15px 0;
+    padding: 30px 0;
 
-    .input-group-addon {
-      font-size: 12px;
-      text-transform: uppercase;
+    label {
+      color: #777;;
+      font-size: 14px;
+      margin-top: 20px;
+      width: 100%;
     }
 
-    .input-group-btn .btn {
-      text-transform: uppercase;
-      font-size: 12px;
-      height: 34px;
-      text-shadow: none;
+    .input-item {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #e5e5e5;
+      margin-bottom: 15px;
+      padding: 0 0 7px;
+      width: 100%;
+
+      &:focus {
+        outline: none;
+      }
     }
+
+    .input-button {
+      background: transparent;
+      border: 1px solid #e5e5e5;
+      border-radius: 3px;
+      font-size: 14px;
+      margin-top: 5px;
+      padding: 10px 15px;
+      -ms-transition: background 0.25s linear;
+      -moz-transition: background 0.25s linear;
+      -webkit-transition: background 0.25s linear;
+      transition: background 0.25s linear;
+      width: 100%;
+
+      &:hover {
+        background: #111111;
+      }
+    }
+
 }
 
 /* ============================================================
